@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Webber | ABOUT US</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="AboutUs.css">
+</head>
+
+<body>
+    <!-- Masthead -->
+    <header class="masthead">
+        <h1 class="logo">WEBBER</h1>
+    </header>
+
+   <!-- Nav -->
+<nav class="navbar">
+  <div class="nav-wrapper">
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul id="nav-links">
+      <li><a href="../home.html">HOME</a></li>
+      <li><a href="AboutUs.html" class="active">ABOUT US</a></li>
+      <li><a href="../People/People.html">PEOPLE</a></li>
+      <li><a href="../Events/Events.html">EVENTS</a></li>
+      <li><a href="../News/News.html">NEWS</a></li>
+      <li><a href="../Entertainment/Entertainment.html">ENTERTAINMENT</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<section class="about-contact">
+
+  <div class="section-block">
+    <h2>About Us</h2>
+    <p>
+      Webber and the Mathematics Club bring students together in a collaborative space to explore new ideas and deepen their understanding of mathematics. 
+      The club encourages discussion, problem-solving, and the sharing of different perspectives on various mathematical topics.
+      <br><br>
+      Through Webber, students also gain access to fresh insights, engaging articles, and updates on mathematics-related events. 
+      Together, they create a dynamic environment where curiosity is encouraged and learning extends beyond the classroom.
+    </p>
+  </div>
+
+  <div class="section-divider"></div>
+  <div class="section-block">
+  <h2>Do You Want To Join?</h2>
+
+  <ol class="steps">
+    <li>Log in to eFundi using your student credentials</li>
+    <li>Go to the <strong>Overview</strong> tab</li>
+    <li>Click on <strong>Membership</strong></li>
+    <li>Select <strong>Joinable Sites</strong></li>
+    <li>In the search bar, type <strong>Math Club</strong></li>
+    <li>Click <strong>Join</strong> to become a member</li>
+  </ol>
+</div>
+
+  
+
+  <div class="section-block">
+    <h2>Contact Us</h2>
+    <p>
+      Have a question, suggestion, or want to get involved? We’d love to hear from you. Whether you’re interested in joining the Mathematics Club, or learning more about upcoming events, feel free to reach out.
+       Connect with us and be part of a community that shares a passion for mathematics and new ideas.
+    </p>
+
+    <p class="email">
+      Email us:
+      <a href="mailto:webberandcompanysa@gmail.com">
+        webberandcompanysa@gmail.com
+      </a>
+    </p>
+  </div>
+
+</section>
+
+
+
+<!-- Footer section-->
+ <footer class="footer">
+  <div class="footer-line"></div>
+  <p>© 2026 Webber and Company, Inc</p>
+</footer>
+
+<!-- JS -->
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+
+
+</html>

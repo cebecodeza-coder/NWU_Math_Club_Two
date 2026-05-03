@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Webber | PEOPLE</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="People.css">
+</head>
+
+<body>
+
+<!-- Masthead -->
+<header class="masthead">
+  <h1 class="logo">WEBBER</h1>
+</header>
+
+ <!-- Nav -->
+<nav class="navbar">
+  <div class="nav-wrapper">
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul id="nav-links">
+      <li><a href="../home.html">HOME</a></li>
+      <li><a href="AboutUs.html">ABOUT US</a></li>
+      <li><a href="../People/People.html" class="active">PEOPLE</a></li>
+      <li><a href="../Events/Events.html">EVENTS</a></li>
+      <li><a href="../News/News.html">NEWS</a></li>
+      <li><a href="../Entertainment/Entertainment.html">ENTERTAINMENT</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- People Section -->
+<section class="people-section">
+  <h2 class="section-title">Members</h2>
+  <div class="section-line"></div>
+
+  <div class="people-grid">
+
+    <article class="person-card">
+      <a href = "StudentOne.html"><img src="People Images/Student1.jpg" alt="Noah Wyle" ></a>
+      <p class="credit">BEng Mechanical Engineering</p>
+      <h3>Michelle Williams</h3>
+    </article>
+
+    <article class="person-card">
+     <a href ="StudentTwo.html"><img src="People Images/Student2.jpg" alt="Alysa Liu"></a>
+      <p class="credit">BSc Computer Science and Statistics</p>
+      <h3>Thabo Cele</h3>
+    </article>
+
+    <article class="person-card">
+      <a href = "StudentThree.html" ><img src="People Images/Student3.jpg" alt="Dolores Huerta" ></a>
+      <p class="credit">BSc Actuarial Science</p>
+      <h3>Benjamin van Zyl</h3>
+    </article>
+
+    <article class="person-card">
+      <a href = "StudentFour.html"><img src="People Images/Student4.jpg" alt="Zohran Mamdani" ></a>
+      <p class="credit">BSc Mathematics and Computer Science</p>
+      <h3>Hamza Yassin</h3>
+    </article>
+
+  </div>
+</section>
+
+<!-- Footer section-->
+ <footer class="footer">
+  <div class="footer-line"></div>
+  <p>© 2026 Webber and Company, Inc</p>
+</footer>
+
+<!-- JS (navbar toggle) -->
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+</html>

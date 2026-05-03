@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Webber | ENTERTAINMENT</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Entertainment.css">
+</head>
+
+<body>
+
+<!-- Masthead -->
+<header class="masthead">
+  <h1 class="logo">WEBBER</h1>
+</header>
+
+<!-- Nav -->
+<nav class="navbar">
+  <div class="nav-wrapper">
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <!-- Links -->
+    <ul id="nav-links">
+      <li><a href="../home.html">HOME</a></li>
+      <li><a href="../About us/AboutUs.html">ABOUT US</a></li>
+      <li><a href="../People/People.html">PEOPLE</a></li>
+      <li><a href="../Events/Events.html">EVENTS</a></li>
+      <li><a href="../News/News.html">NEWS</a></li>
+      <li><a href="Entertainment.html" class="active">ENTERTAINMENT</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- Main Content -->
+<main class="container">
+    
+  <div class="need-header">
+    <h1>Entertainment</h1>
+  </div>
+
+  <!-- Article 1 -->
+  <section class="article">
+    <div class="article-img">
+      <a href="../Entertainment/Documents/Topological spaces.pdf" target="_blank">
+        <img src="../Entertainment/Entertainment Images/Article1.jpg" alt="Topological spaces article">
+      </a>
+      
+      <p class="photo-credit">
+        Photographer by 
+        <a href="https://unsplash.com/@lazycreekimages" target="_blank">Michael Dziedzic</a>
+      </p>
+    </div>
+
+    <div class="article-content">
+      
+      <h2>
+        <a href="../Entertainment/Documents/Topological spaces.pdf" target="_blank">
+          Topological spaces
+        </a>
+      </h2>
+
+      <div class="meta">
+        <span>By Dr Elena Caviglia and Dr Luca Mesiti</span>
+        <span>|</span>
+        <span>April edition, 2026</span>
+      </div>
+
+      <p class="description">
+        A topological space describes “closeness” without using exact distances. 
+        Imagine a map where you don’t measure kilometers—you just know which places are near or connected. 
+        This idea lets mathematicians study shapes and structures in a flexible, general way.
+      </p>
+    </div>
+  </section>
+
+  <!-- Article 2 -->
+  <section class="article">
+    <div class="article-img">
+      <a href="../Entertainment/Documents/Partially ordered sets.pdf" target="_blank">
+        <img src="../Entertainment/Entertainment Images/Article2.jpg" alt="Partially ordered sets article">
+      </a>
+
+      <p class="photo-credit">
+        Photographer by 
+        <a href="https://unsplash.com/@sambelgoreng39" target="_blank">Rozan Naufal</a>
+      </p>
+    </div>
+
+    <div class="article-content">
+      <h2>
+        <a href="../Entertainment/Documents/Partially ordered sets.pdf" target="_blank">
+          Partially ordered sets
+        </a>
+      </h2>
+
+      <div class="meta">
+        <span>By Dr Elena Caviglia and Dr Luca Mesiti</span>
+        <span>|</span>
+        <span>March edition, 2026</span>
+      </div>
+
+      <p class="description">
+        A partially ordered set is a way of organizing things by what depends on what. 
+        Think of tasks in a project: some must be done before others, but some can happen independently. 
+        This kind of flexible ordering shows up naturally in mathematics, computer science, and real-world systems.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-line"></div>
+  <p>© 2026 Webber and Company, Inc</p>
+</footer>
+
+<!-- JS (navbar toggle) -->
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

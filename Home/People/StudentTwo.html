@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Webber | PEOPLE</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="StudentOne.css">
+</head>
+
+<body>
+
+<!-- Masthead -->
+<header class="masthead">
+  <h1 class="logo">WEBBER</h1>
+</header>
+
+ <!-- Nav -->
+<nav class="navbar">
+  <div class="nav-wrapper">
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul id="nav-links">
+      <li><a href="../home.html">HOME</a></li>
+      <li><a href="AboutUs.html" class="active">ABOUT US</a></li>
+      <li><a href="../People/People.html">PEOPLE</a></li>
+      <li><a href="../Events/Events.html">EVENTS</a></li>
+      <li><a href="../News/News.html">NEWS</a></li>
+      <li><a href="../Entertainment/Entertainment.html">ENTERTAINMENT</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<section class="article">
+
+  <div class="article-hero">
+    
+    <!-- LEFT TEXT -->
+    <div class="article-info">
+      <p class="date">BSc Computer Science and Statistics</p>
+      <h1>Thabo Cele</h1>
+      <div class="author-line"></div>
+      <p class="author">by Webber Productions</p>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="article-image">
+      <img src="../People/People Images/Student2.jpg" alt="Noah Wyle" width="600" height="400">
+    </div>
+
+  </div>
+
+  <!-- BODY TEXT -->
+  <div class="article-body">
+    <p>
+      Thabo Cele moves with intent. There’s little hesitation in how he approaches problems—only a steady focus on solving them. 
+      A student of computer science and statistics, his foundation was laid at Glenwood High School, where he distinguished himself early, earning 97% in NSC Mathematics. 
+      But achievement, for Cele, was never the endpoint; it was an invitation to go further.
+    </p>
+
+    <p>
+      He taught himself Python, not out of necessity, but curiosity—drawn to the logic of code and the freedom it offered to build, test, and refine ideas.
+      Programming became more than a skill; it became a language through which he could think. 
+    </p>
+
+    <p>
+      Now, that same drive is pointed toward a larger ambition: to work at the frontier of machine learning and artificial intelligence, and ultimately to build a company of his own. 
+      For Cele, the trajectory is clear—learn deeply, build boldly, and shape what comes next.
+    </p>
+  </div>
+
+</section>
+
+
+
+<!-- Footer section-->
+ <footer class="footer">
+  <div class="footer-line"></div>
+  <p>© 2026 Webber and Company, Inc</p>
+</footer>
+
+<!-- JS (navbar toggle) -->
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

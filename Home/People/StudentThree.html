@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Webber | PEOPLE</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="StudentThree.css">
+</head>
+
+<body>
+
+<!-- Masthead -->
+<header class="masthead">
+  <h1 class="logo">WEBBER</h1>
+</header>
+
+ <!-- Nav -->
+<nav class="navbar">
+  <div class="nav-wrapper">
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul id="nav-links">
+      <li><a href="../home.html">HOME</a></li>
+      <li><a href="AboutUs.html" class="active">ABOUT US</a></li>
+      <li><a href="../People/People.html">PEOPLE</a></li>
+      <li><a href="../Events/Events.html">EVENTS</a></li>
+      <li><a href="../News/News.html">NEWS</a></li>
+      <li><a href="../Entertainment/Entertainment.html">ENTERTAINMENT</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<section class="article">
+
+  <div class="article-hero">
+    
+    <!-- LEFT TEXT -->
+    <div class="article-info">
+      <p class="date">BSc Actuarial Science</p>
+      <h1>Benjamin van Zyl</h1>
+      <div class="author-line"></div>
+      <p class="author">by Webber Productions</p>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="article-image">
+      <img src="../People/People Images/Student3.jpg" alt="Noah Wyle" width="600" height="400">
+    </div>
+
+  </div>
+
+  <!-- BODY TEXT -->
+  <div class="article-body">
+    <p>
+      Benjamin van Zyl thinks long-term. Even early on, at Helpmekaar Kollege, his ambitions were already taking shape—not just to enter the world of actuarial science, but to rise within it.
+    </p>
+
+    <p>
+      Now pursuing actuarial science, he approaches his studies with a clear sense of direction: toward the structured, high-stakes environments of insurance firms and banks, and ultimately toward leadership at the highest level.
+    </p>
+
+    <p>
+      For van Zyl, mathematics is more than calculation; it is discipline. A way of sharpening judgment, of learning how to weigh risk, anticipate outcomes, and solve problems where the answers are never obvious. That mindset extends beyond finance.
+    </p>
+
+    <p>
+      An interest in astronomy hints at a broader curiosity—a willingness to look outward, to understand systems both vast and precise. In both, the appeal is the same: patterns, prediction, and the challenge of making sense of complexity.
+    </p>
+  </div>
+
+</section>
+
+
+
+<!-- Footer section-->
+ <footer class="footer">
+  <div class="footer-line"></div>
+  <p>© 2026 Webber and Company, Inc</p>
+</footer>
+
+<!-- JS (navbar toggle) -->
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+</html>

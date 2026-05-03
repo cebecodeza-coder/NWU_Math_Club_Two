@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f2ee;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Masthead */
+.masthead {
+  text-align: center;
+  padding: 20px 0 10px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 6vw, 64px);
+  color: purple;
+  letter-spacing: 2px;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.nav-wrapper {
+  position: relative;
+}
+
+/* Links */
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  list-style: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Link styles */
+.navbar a {
+  text-decoration: none;
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: purple;
+}
+
+.navbar a.active {
+  color: purple;
+}
+
+/* Grid */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2.7fr 1fr;
+  gap: 35px;
+  max-width: 1050px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Columns */
+.left, .center, .right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Images */
+.image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.image.large {
+  height: 420px;
+}
+
+/* Text */
+.credit {
+  font-size: 11px;
+  color: #888;
+}
+
+.credit a {
+  color: #888;
+  text-decoration: none;
+}
+
+.credit a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 1.35;
+  cursor: pointer;
+  font-variant-numeric: lining-nums;
+}
+
+.title a {
+  color: #111;
+  text-decoration: none;
+}
+
+.title a:hover {
+  color: purple;
+}
+
+.main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 5vw, 52px);
+  text-align: center;
+  line-height: 1.05;
+  margin: 15px 0;
+}
+
+.main-title a {
+  color: #111;
+  text-decoration: none;
+}
+
+.main-title a:hover {
+  color: purple;
+}
+
+/* Divider */
+.center {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+/* News Row */
+.news-row {
+  max-width: 1050px;
+  margin: 30px auto;
+  padding: 25px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.news-item {
+  padding-right: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.news-item:last-child {
+  border-right: none;
+}
+
+.tag {
+  font-size: 11px;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.news-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.news-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.news-item h3:hover {
+  color: purple;
+}
+
+/* Footer */
+.footer {
+  background: #f5f2ee;
+  color: #888;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.footer-line {
+  height: 1px;
+  background: #ddd;
+  max-width: 1050px;
+  margin: 0 auto 15px;
+}
+
+.footer p {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin: 35px 0 15px;
+  text-transform: uppercase;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .image.large {
+    height: 260px;
+  }
+
+  .news-row {
+    grid-template-columns: 1fr;
+  }
+
+  .news-item {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+  }
+
+  .news-item:last-child {
+    border-bottom: none;
+  }
+}
+
+/*  COLLAPSIBLE NAVBAR */
+@media (max-width: 700px) {
+
+  .menu-toggle {
+    display: block;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #f5f2ee;
+    padding: 15px 0;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 600px) {
+
+  .image,
+  .image.large {
+    height: auto;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+}
+
+.club-description {
+  font-size: 18px;
+  color: #555;
+  max-width: 620px;
+  margin: 10px auto 20px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Mobile refinement */
+@media (max-width: 768px) {
+  .club-description {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}

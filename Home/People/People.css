@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f2ee;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Masthead */
+.masthead {
+  text-align: center;
+  padding: 20px 0 10px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 6vw, 64px);
+  color: purple;
+  letter-spacing: 2px;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.nav-wrapper {
+  position: relative;
+}
+
+/* Desktop nav */
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  list-style: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Links */
+.navbar a {
+  text-decoration: none;
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: purple;
+}
+
+.navbar a.active {
+  color: purple;
+}
+
+/* ================= PEOPLE SECTION ================= */
+
+.people-section {
+  max-width: 1300px;
+  margin: 60px auto;
+  padding: 0 30px;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(36px, 6vw, 86px);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.section-line {
+  height: 1px;
+  background: #d9d4cf;
+  margin-bottom: 45px;
+}
+
+/* Grid */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* Cards */
+.person-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.credit {
+  font-size: 12px;
+  color: #7a746f;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.person-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.person-card h3:hover {
+  color: purple;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #f5f2ee;
+  color: #888;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.footer-line {
+  height: 1px;
+  background: #ddd;
+  max-width: 1050px;
+  margin: 0 auto 15px;
+}
+
+.footer p {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .people-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Navbar */
+@media (max-width: 700px) {
+
+  .menu-toggle {
+    display: block;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #f5f2ee;
+    padding: 15px 0;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+}
+
+/* Small phones */
+@media (max-width: 500px) {
+
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .person-card h3 {
+    font-size: 22px;
+  }
+}

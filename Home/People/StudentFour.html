@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Webber | PEOPLE</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="StudentFour.css">
+</head>
+
+<body>
+
+<!-- Masthead -->
+<header class="masthead">
+  <h1 class="logo">WEBBER</h1>
+</header>
+
+<!-- Nav -->
+<nav class="navbar">
+  <div class="nav-wrapper">
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul id="nav-links">
+      <li><a href="../home.html">HOME</a></li>
+      <li><a href="AboutUs.html" class="active">ABOUT US</a></li>
+      <li><a href="../People/People.html">PEOPLE</a></li>
+      <li><a href="../Events/Events.html">EVENTS</a></li>
+      <li><a href="../News/News.html">NEWS</a></li>
+      <li><a href="../Entertainment/Entertainment.html">ENTERTAINMENT</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<section class="article">
+
+  <div class="article-hero">
+    
+    <!-- LEFT TEXT -->
+    <div class="article-info">
+      <p class="date">BSc Mathematics and Computer Science</p>
+      <h1>Hamza Yassin</h1>
+      <div class="author-line"></div>
+      <p class="author">by Webber Productions</p>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="article-image">
+      <img src="../People/People Images/Student4.jpg" alt="Noah Wyle" width="600" height="400">
+    </div>
+
+  </div>
+
+  <!-- BODY TEXT -->
+  <div class="article-body">
+    <p>
+      Hamza Yassin carries a quiet intensity. An international student from Kenya, his journey began at Alliance High School, where he consistently ranked among the top ten academically and, in his final year, was named best mathematics student in his class. 
+      The recognition mattered—but more telling was the discipline behind it, a sustained focus on understanding rather than merely performing.
+    </p>
+
+    <p>
+      Now studying mathematics and computer science, Yassin is drawn to the deeper structures beneath the surface. His interests point toward topology and geometry—fields where intuition meets abstraction, and where the questions are often as complex as the answers.
+    </p>
+
+    <p>
+      A PhD is not an ambition so much as a continuation. For Yassin, the goal is clear: to contribute to the language of mathematics itself, exploring the shapes, spaces, and ideas that define it.
+    </p>
+  </div>
+
+</section>
+
+
+
+<!-- Footer section-->
+ <footer class="footer">
+  <div class="footer-line"></div>
+  <p>© 2026 Webber and Company, Inc</p>
+</footer>
+
+<!-- JS (navbar toggle) -->
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+</html>

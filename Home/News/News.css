@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f2ee;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Masthead */
+.masthead {
+  text-align: center;
+  padding: 20px 0 10px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  color: purple;
+  letter-spacing: 2px;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  list-style: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Links */
+.navbar a {
+  text-decoration: none;
+  color: #111; 
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  color: purple; 
+}
+
+/* Active page */
+.navbar a.active {
+  color: purple;
+}
+
+/* footer */
+
+.footer {
+  background: #f5f2ee; 
+  color: #888;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+
+.footer-line {
+  height: 1px;
+  background: #ddd;
+  max-width: 1050px; 
+  margin: 0 auto 15px;
+}
+
+.footer p {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* base code */
+
+/* News */
+.need-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 30px;
+}
+
+/* Header */
+.need-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.need-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: 500;
+}
+
+/* Grid */
+.need-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.need-card {
+  position: relative;
+  border: 1px solid #d8d3cd;
+  padding: 25px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.need-card:hover {
+  border-color: purple;
+}
+
+/* Tag */
+.tag {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #8a8682;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.need-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.need-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Link */
+.need-card a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #111;
+}
+
+/* Plus icon */
+.plus {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 1px solid #111;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .need-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .need-header h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .need-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .need-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .need-header h1 {
+    font-size: 36px;
+  }
+
+  .select-btn {
+    font-size: 11px;
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .people-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Navbar */
+@media (max-width: 700px) {
+
+  .menu-toggle {
+    display: block;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #f5f2ee;
+    padding: 15px 0;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+}
+
+/* Small phones */
+@media (max-width: 500px) {
+
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .person-card h3 {
+    font-size: 22px;
+  }
+}
