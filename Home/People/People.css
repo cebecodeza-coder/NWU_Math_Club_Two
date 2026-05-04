@@ -110,6 +110,15 @@ body {
   margin-bottom: 10px;
 }
 
+.credit a {
+  text-decoration: none;   
+  color: inherit;          
+}
+
+.credit a:hover {
+  text-decoration: underline; 
+}
+
 .person-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
